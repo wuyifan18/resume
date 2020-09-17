@@ -1,88 +1,89 @@
-% !TEX TS-program = xelatex
-% !TEX encoding = UTF-8 Unicode
-% !Mode:: "TeX:UTF-8"
+% !TEX program = xelatex
 
 \documentclass{resume}
 \usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
-% \usepackage{NotoSansSC_external}
-% \usepackage{NotoSerifCJKsc_external}
-% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
-\usepackage{linespacing_fix} % disable extra space before next section
-\usepackage{cite}
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
+\name{Yifan Wu}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
- 
-\section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
+  \email{yifanwu@pku.edu.cn} \textperiodcentered\ 
+  \phone{(+86) 184-8207-1800} \textperiodcentered\ 
+  \github[wuyifan18]{https://github.com/wuyifan18}}
 
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
+\section{教育经历}
+\datedsubsection{\textbf{Peking University}}{Sep. 2019 -- Present}
+Ph.D. student in Software Engineering\\
+Advisor: Prof. \href{http://www.ss.pku.edu.cn/index.php/teacherteam/teacherlist/1674-%E6%9D%8E%E5%BD%B1}{Ying Li}
+\datedsubsection{\textbf{University of Electronic Science and Technology of China}}{Sep. 2015 -- Jun. 2019}
+B.E. in Software Engineering\\
+GPA: 3.86/4.0\\
+Rank: 3/132
+
+\section{研究兴趣}
+Graph Computing, Machine Learning Systems, Distributed Systems
+
+\section{项目经历}
+\datedsubsection{\textbf{LogFlash}}{Sep. 2019 -- Present}
+\textit{Submitted} to anonymous peer-review, Second author\\
+It is important to detect and diagnose anomalies accurately and timely for large-scale software systems. Thus, We propose LogFlash, an online self-updating anomaly detection and diagnosis approach that enables model training and anomaly diagnosis at real time. LogFlash considers anomaly detection and diagnosis as a real-time streaming processing task where each log entry is processed only once without any iterations or intermediate storage. Experiment results show that LogFlash reduces over 5 times of training and detection time compared with the state-of-art works while maintaining the capability of accurate problem diagnosis.
 \begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
+  \item Implementation of log template mining module based on Flink
+  \item Implementation of front-end page including task management and config management
+  \item Deployment of LogFlash based on docker
 \end{itemize}
 
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
-\begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
+\datedsubsection{\textbf{Data annotation platform}}{Apr. 2019 -- Aug. 2019}
+\role{SDE Intern at Infimind}{}
+Data annotation platform composed of multiple modules such as user login, project and task management, annotation statistics and review, annotation operation.
 \begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
+  \item Implementation of front-end page including user based on Vue.js
 \end{itemize}
-\end{onehalfspacing}
 
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
-\begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+\datedsubsection{\textbf{Crawler project}}{Mar. 2019 -- Apr. 2019}
+\role{SDE Intern at Infimind}{}
+An crawler tool for China Judgements Online.
 \begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
+  \item Support IP proxy
+  \item Support multiple processes
+  \item Support full crawling
+  \item Divide data according to decision time, region and court
 \end{itemize}
-\end{onehalfspacing}
 
-% Reference Test
-%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
-%An xxx optimized for xxx\cite{verma2015large}
-%\begin{itemize}
-%  \item main contribution
-%\end{itemize}
+\datedsubsection{\textbf{Xlearn Project}}{Feb. 2018 -- May. 2018}
+\role{SDE Intern at School of Software, Tsinghua University}{Supvised by Mingsheng Long, Zhongyi Pei}
+An platform where non-machine learning experts can run machine learning applications such as radar extrapolation.
+\begin{itemize}
+  \item Implementation of backend based on Flask and Nginx
+  \item Deployment of algorithms such as radar extrapolation
+  \item Implementation of front-end page
+\end{itemize}
 
-\section{\faCogs\ IT 技能}
-% increase linespacing [parsep=0.5ex]
+\section{主要论文}
+\begin{enumerate}[parsep=0.5ex]
+  \item How Far Have We Come in Detecting Anomalies in Distributed Systems? An Empirical Study with a Statement-level Fault Injection Method\\
+  Yong Yang, \textbf{Yifan Wu}, Karthik Pattabiraman, Long Wang, Ying Li\\
+  The 31st International Symposium on Software Reliability Engineering (\textbf{ISSRE'20}) (CCF B)
+\item LogFlash: Online Anomaly Detection and Diagnosis from System Logs for Large-scale Software Systems (Submitted to anonymous peer-review)\\
+  Tong Jia, Ying Li, \textbf{Yifan Wu}\\
+\end{enumerate}
+
+\section{主要奖励}
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
-  \item 平台: Linux
-  \item 开发: xxx
+  \item \datedline{Outstanding Graduates of UESTC}{2019}
+  \item \datedline{Second Award, People's Scholarship}{2018}
+  \item \datedline{Suzhou Industrial Park Scholarship}{2017}
+  \item \datedline{Outstanding League Member of UESTC}{2017}
+  \item \datedline{First Award, People's Scholarship}{2016}
 \end{itemize}
 
-\section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
-
-\section{\faInfo\ 其他}
-% increase linespacing [parsep=0.5ex]
+\section{专业技能}
 \begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
+  \item Languages: Java, Python, C, Go, Markdown
+  \item Systems: Flink, Pytorch, Docker, TensorFlow, PowerGraph, Vue.js
 \end{itemize}
 
 %% Reference
