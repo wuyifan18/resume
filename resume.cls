@@ -72,7 +72,7 @@
 }
 
 \newcommand{\name}[1]{
-  \centerline{\Huge\scshape{#1}}
+  \centerline{\Huge\textrm{#1}}
   \vspace{1.25ex}
 }
 
@@ -87,7 +87,7 @@
 \newcommand{\email}[1]{\faEnvelope\ \href{mailto:#1}{#1}}
 % defines one's phone
 % usage: \phone{<phone>}
-\newcommand{\phone}[1]{\faPhone\ {#1}}
+\newcommand{\phone}[1]{\faPhone {#1}}
 % defines one's linkedin
 % usage: \linkedin{<linkedin>}
 \newcommand{\linkedin}[2][]{\faLinkedin\ 
